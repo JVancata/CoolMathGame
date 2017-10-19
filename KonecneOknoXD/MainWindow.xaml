@@ -7,6 +7,16 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="144*"/>
+            <RowDefinition Height="175*"/>
+        </Grid.RowDefinitions>
+        <Label x:Name="Problem" Content="Problem" VerticalAlignment="Top" Margin="10,21,10,0" RenderTransformOrigin="0.433,-4.079" Height="40" FontSize="20" HorizontalContentAlignment="Center"/>
+        <Button x:Name="Button1" Content="Button1" HorizontalAlignment="Right" Margin="0,29,90,0" VerticalAlignment="Top" Width="117" Click="Button_Click" Height="50" Grid.Row="1" HorizontalContentAlignment="Center" RenderTransformOrigin="-0.553,0.517"/>
+        <Button x:Name="Button2" Content="Button2" HorizontalAlignment="Left" Margin="90,29,0,0" VerticalAlignment="Top" Width="117" Click="Button_Click" Height="50" Grid.Row="1" HorizontalContentAlignment="Center" RenderTransformOrigin="0.524,-0.296"/>
+        <Label x:Name="Result" Content="Result" Margin="10,66,10,0" VerticalAlignment="Top" Height="47" FontSize="20" Background="White" Foreground="#DD151414" HorizontalContentAlignment="Center"/>
+        <ProgressBar x:Name="pBar" Value="0" Height="36" Margin="0,139,0,0" Grid.Row="1" VerticalAlignment="Top" Minimum="0" Maximum="100"/>
+        <Label x:Name="TestTimer" HorizontalAlignment="Left" Height="26" Margin="152,118,0,0" VerticalAlignment="Top" Width="226"/>
+
     </Grid>
 </Window>
